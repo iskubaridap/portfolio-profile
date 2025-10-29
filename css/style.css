@@ -1,0 +1,866 @@
+/* CSS Document */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, sub, sup, tt, var,
+u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* ========== Generic Style ========== */
+
+body
+{
+	display: table;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	font-family: Arial, Helvetica, sans-serif;
+}
+a
+{
+	text-decoration: none;
+	color: #000;
+}
+#background
+{
+	display: table;
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+#wrapper
+{
+	margin: 0 auto;
+	position: relative;
+	vertical-align: middle;
+}
+.aTable
+{
+	display: table;
+}
+.aTR
+{
+	display: table-row;
+}
+.aTD
+{
+	display: table-cell;
+	vertical-align: middle;
+}
+.aTH
+{
+	display: table-cell;
+	text-align: center;
+	font-weight: bold;
+	vertical-align: middle;
+}
+header
+{
+	z-index: 100;
+}
+.dontDisplay,
+#wrapper #personalProfilePage,
+#wrapper #programsPage,
+#wrapper #websitesPage,
+#wrapper #artworksPage,
+header > h1,
+nav h2,
+article > h1,
+#programsPage > h1,
+#websitesPage > h1,
+#artworksPage > h1
+{
+	display: none;
+}
+/* ========== Home Style ========== */
+header > h2
+{
+	margin: 30px auto 20px;
+	font-size: 3em;
+	font-weight: bold;
+	color: #ff0;
+	text-transform: uppercase;
+	text-shadow: 2px 2px 2px #000;
+}
+header > h3
+{
+	margin: 0 30px;
+	padding: 5px 10px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size: 1.5em;
+	color: #320b00;
+	background-color: #ffffac;
+	border-radius: 5px;
+	box-shadow: 2px 2px 2px #000;
+}
+header > h3 span
+{
+	margin-right: 10px;
+	font-weight: bold;
+	color: #ffa800;
+	text-shadow: 1px 1px 1px #000;
+}
+blockquote
+{
+	margin: 40px auto 20px;
+	padding: 10px;
+	font-size: 1.2em;
+	width: 700px;
+	color: #000;
+	text-align: left;
+	text-indent: 2em;
+	line-height: 1.2;
+	background-color: #ffa729;
+	border-radius: 5px;
+	box-shadow: 2px 2px 2px #000;
+	font-family: Arial, Helvetica, sans-serif;
+}
+/* ========== Personal Profile Style ========== */
+#linkBG
+{
+	margin: 0 auto;
+	height: 40px;
+	width: 100%;
+	background-color: #000066;
+	position: fixed;
+	z-index: 5;
+}
+#pageTopSpace
+{
+	height: 40px;
+}
+#personalProfilePage
+{
+	width: 100%;
+	color: #fff;
+	font-family: Arial;
+}
+#personalProfilePage > section,
+#skillsEduWrapper
+{
+	position: relative;
+	display: table;
+}
+#PPBackground > .aTable,
+#workExperience > .aTable,
+#trainingCourses > .aTable,
+#skillsEduWrapper > .aTable
+{
+	margin: 0 auto;
+	width: 960px;
+}
+#PPBackground > .aTable > .aTD,
+#workExperience> .aTable > .aTD
+{
+	vertical-align: middle;
+}
+#personalProfilePage,
+#PPBackground,
+#workExperience,
+#trainingCourses,
+#skillsEduWrapper
+{
+	margin: 0 auto;
+	display: table;
+}
+#personalProfilePage h1
+{
+	margin-bottom: 30px;
+	font-size: 2.75em;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+#PPBackground
+{
+	width: 100%;
+	color: #996600;
+	background: url(../images/PPBackground_shadow.png) 0 100% repeat-x;
+	background-color: #ffcc00;
+}
+#PPBackground .aTable .aTD > div > .aTable
+{
+	width: 680px;
+	font-size: 1.5em;
+	background-color: #ffcc00;
+}
+#PPBackground .aTable .aTD .aTable .aTR > .aTD
+{
+	padding: 10px;
+	vertical-align: top;
+}
+#PPBackground .aTable .aTD .aTable > .aTR:nth-child(odd)
+{
+	background-color: #ffdc4e;
+}
+.py-20 {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+#workExperience
+{
+	background: url(../images/workExperience_shadow.png) 0 100% repeat-x;
+	background-color: #336600;
+}
+#workExperience h2
+{
+	margin: 20px 0;
+	padding: 10px;
+	background-color: #99ff66;
+	color: #336600;
+	font-weight: bold;
+	font-size: 1.3em;
+	border-radius: 5px;
+}
+#WEWrapper
+{
+	line-height: 1.2;
+	font-size: 1.2em;
+}
+#workExperience b
+{
+	margin: 20px 30px;
+	display: table;
+	font-size: 0.9em;
+}
+#workExperience strong
+{
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+	display: table;
+}
+#workExperience ol
+{
+	padding: 10px 20px;
+	list-style: decimal;
+	background-color: #448306;
+	display: table;
+	border-radius: 5px;
+}
+#workExperience li
+{
+	margin-left: 20px;
+	line-height: 1.5;
+}
+#workExperience hr
+{
+	margin: 40px;
+}
+#trainingCourses
+{
+	background: url(../images/trainingCourses_shadow.png) 0 100% repeat-x;
+	background-color: #990033;
+}
+#TCCertIcon
+{
+	float: right;
+}
+#TCCertIcon .aTD
+{
+	vertical-align: middle;
+	text-align: center;
+}
+#TCCertIcon img
+{
+	width: 300px;
+	height: 300px;
+}
+#TCWrapper
+{
+	font-size: 1.3em;
+	line-height: 1.5;
+}
+#TCWrapper h2
+{
+	margin: 10px 0;
+	font-weight: bold;
+	font-size: 1.2em;
+}
+#TCWrapper > div
+{
+	margin: 20px 0;
+	padding: 10px;
+	width: 650px;
+}
+#TCWrapper div:first-child
+{
+	margin: 0;
+	padding: 0;
+	width: 300px;
+	height: 300px;
+}
+#skillsEduWrapper
+{
+	text-align: center;
+	background: url(../images/skillsEduWrapper_shadow.png) 0 100% repeat-x;
+	background-color: #333;
+}
+#skillsEduWrapper section
+{
+	margin: 0 20px;
+	padding: 10px;
+	display: inline-table;
+	width: 400px;
+	line-height: 1.4;
+}
+#skillsEduWrapper section h1
+{
+	padding: 10px;
+	font-size: 1.5em;
+	background-color: #cc6600;
+	border-radius: 5px;
+	color: #fff;
+}
+#skills ul
+{
+	list-style: disc;
+}
+#skills li
+{
+	margin-left: 10px;
+	line-height: 2em;
+	font-size: 1.2em;
+}
+#eduBackground > div
+{
+	margin: 20px 0;
+}
+#eduBackground h2
+{
+	font-size: 1.3em;
+	font-weight: bold;
+}
+#skillsEduWrapper section
+{
+	display: inline-table;
+	width: 400px;
+	line-height: 1.4;
+}
+#skillsEduWrapper section h1
+{
+	font-size: 1.5em;
+	text-align: center;
+}
+#skills ul
+{
+	list-style: disc;
+}
+#skills li
+{
+	margin-left: 10px;
+	line-height: 1.5em;
+}
+#skills, #eduBackground
+{
+	text-align: left;
+}
+/* ========== Programs Style ==========*/
+#programsPage
+{
+	position: absolute;
+	width: 100%;
+	top:0;
+}
+#programWrapper
+{
+	margin: 0 auto;
+	position: relative;
+	width: 960px;
+}
+#computerBG
+{
+	position:fixed;
+	bottom: 0;
+}
+#linksTopBG
+{
+	position: absolute;
+	background-color: #3f3f3f;
+	top: 0;
+	display: table;
+	width: 100%;
+	height: 40px;
+}
+#linksBottomBG
+{
+	padding: 10px;
+	position: fixed;
+	background-color: #000099;
+	display: none;
+	width: 960px;
+	display: none;
+	border-radius: 50px;
+	z-index: 50;
+}
+#programsWrapper,#progIconWrapper
+{
+	border-radius: 5px;
+	border: 1px solid #a1a1a1;
+	box-shadow: 2px 2px 4px #000;
+}
+#progIconWrapper
+{
+	margin: 0;
+	top: 90px;
+	position: fixed;
+	display: table;
+}
+#progIcon
+{
+	padding: 10px;
+	position: relative;
+	text-align: center;
+	background-color: #e4e0dc;
+	width: 130px;
+}
+#progIcon > div
+{
+	margin: 20px auto;
+}
+/* #programsWrapper
+{
+	margin: 0 auto;
+	padding: 10px;
+	top: 90px;
+	position: absolute;
+	display: table;
+	width: 735px;
+	right: 0;
+	background-color: #fff;top
+	border: 1px solid #000;
+} */
+#programsWrapper
+{
+	margin-top: 90px;
+	margin-left: 190px;
+	margin-bottom: 50px;
+	padding: 10px;
+	display: table;
+	width: 735px;
+	right: 0;
+	background-color: #fff;
+	border: 1px solid #000;
+}
+#programsHead
+{
+	position: absolute;
+	right: 0;
+}
+#programsHead span
+{
+	padding: 10px 20px;
+	font-family: Arial, Helvetica, sans-serif;
+	display: table;
+	text-align: center;
+	position: absolute;
+	top: 60px;
+	right: 10px;
+	z-index: 10;
+	background-color: #00cb45;
+	font-size: 1.5em;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: #fff;
+	border-radius: 5px;
+	box-shadow: 1px 1px 1px #000;
+	text-shadow: 1px 1px 1px #000;
+}
+#programsHead span:hover
+{
+	cursor: pointer;
+	background-color: #00872e;
+}
+#programsPage hr
+{
+	margin: 20px auto;
+	width: 700px;
+}
+#startPage
+{
+	margin-top: 20px;
+	font-size: 3em;
+	font-weight: bold;
+	text-align: center;
+	color: #005826;
+}
+#startPage img
+{
+	margin-top: 50px;
+	padding: 5px;
+	border: 1px solid #959595;
+}
+#progIconWrapper > div
+{
+	cursor: move;
+}
+#programsWrapper
+{
+	padding: 10px;
+	background-color: #fff;
+	display: inline-table;
+  	width: 735px;
+	text-align: left;
+	z-index: 5;
+	font-family: Arial;
+}
+#programsWrapper h2
+{
+	margin: 10px 0;
+	padding: 10px;
+	font-size: 2em;
+	font-weight: bold;
+	background-color: #1d4b7e;
+	color: #fff;
+}
+#programsPage h3
+{
+	padding: 10px;
+	font-weight: bold;
+	font-size: 1.5em;
+	color: #005826;
+	background-color: #dbf7e7;
+	border-radius: 5px;
+	text-transform: uppercase;
+}
+#programsWrapper > div > p
+{
+	margin: 10px 0;
+	line-height: 1.2;
+	text-indent: 2em;
+}
+#programsWrapper > div > .aTable
+{
+	margin: 50px auto;
+	width: 700px;
+	border: 2px solid #005826;
+	border-radius: 5px;
+}
+#programsWrapper > div > .aTable > .aTR > .aTH
+{
+	text-align: left;
+	background-color: #005826;
+	color: #fff;
+}
+#programsWrapper > div > .aTable > .aTR > .aTH,
+#programsWrapper > div > .aTable > .aTR > .aTD
+{
+	padding: 10px;
+	vertical-align: top;
+}
+#programsWrapper > div > .aTable > .aTR:nth-child(even)
+{
+	background-color: #e9f5fc;
+}
+#javascriptPage ul
+{
+	margin-left: 40px;
+	list-style: disc;
+}
+#javascriptPage li
+{
+	line-height: 2em;
+}
+#actionScriptPage .games
+{
+	margin: 50px auto;
+	padding: 10px;
+	border: 2px solid #959595;
+	border-radius: 5px;
+}
+#actionScriptPage .games h3
+{
+	margin: 10px 0;
+	padding: 10px;
+	font-size: 1.5em;
+	font-weight: bold;
+	background-color: #f7941d;
+	color: #fff;
+	text-transform: uppercase;
+}
+#actionScriptPage .games p
+{
+	margin: 20px 0;
+	line-height: 1.2;
+}
+#actionScriptPage .games img
+{
+	margin: 30px auto;
+	padding: 5px;
+	display: table;
+	cursor: pointer;
+	border: 1px solid #959595;
+}
+#javascriptPage,
+#phpPage,
+#javaPage,
+#actionScriptPage
+{
+	display: none;
+}
+/* ========== Websites Style ========== */
+#websitesPage
+{
+	margin: 15px auto;
+	width: 960px;
+	height: 800px;
+	position: relative;
+	background: url(../images/website_page_bg.jpg) center center no-repeat;
+}
+#websiteContainer
+{
+	margin: 0 auto;
+	position: relative;
+	top: 130px;
+	width: 940px;
+	height: 500px;
+	overflow: hidden;
+}
+#webDesign
+{
+	margin: 0 auto;
+	position: relative;
+	width: 1920px;
+	height: 500px;
+	display: table;
+}
+#web2013,#web2010
+{
+	margin: 0 auto;
+	width: 955px;
+	position: relative;
+	display: inline-table;
+	text-align: center;
+	vertical-align: middle;
+}
+#web2013 img,#web2010 img
+{
+	position: relative;
+}
+#webDesign .webWriteUpInfo > div
+{
+	text-align: left;
+}
+#webDesign .webWriteUpInfo .aTR:first-child .aTD
+{
+	font-weight: bold;
+}
+#webDesign .webWriteUpInfo .webWriteUp
+{
+	margin: 20px auto;
+	width: 740px;
+	position: relative;
+}
+#webDesign .webWriteUpInfo .webInfo
+{
+	margin-top: 20px;
+	position: relative;
+	width: 740px;
+	left: 30px;
+}
+#webDesign .webInfo .aTable
+{
+	margin: 10px auto;
+	border: 2px solid #005826;
+	border-radius: 5px;
+	background-color: #fff;
+}
+#webDesign .webInfo .aTable > .aTR > .aTH
+{
+	text-align: left;
+	background-color: #005826;
+	color: #fff;
+}
+#webDesign .webInfo .aTable > .aTR > .aTH,
+#webDesign .webInfo .aTable > .aTR > .aTD
+{
+	padding: 10px;
+	vertical-align: top;
+}
+#webDesign .webInfo .aTable > .aTR:nth-child(even)
+{
+	background-color: #e9f5fc;
+}
+#webDesign .webInfo .aTD
+{
+	vertical-align: top;
+}
+#webDesign .webWriteUpInfo
+{
+	top: 0px;
+	left: 70px;
+	display: none;
+	width: 800px;
+	height: 500px;
+	position: absolute;
+	z-index: 2;
+	overflow: hidden;
+	font-family: Arial;
+	line-height: 1.2;
+}
+#webDesign .webWriteUpInfo h2
+{
+	margin: 10px auto;
+	padding: 10px 0;
+	text-align: center;
+	font-weight: bold;
+	font-size: 1.2em;
+	border-radius: 5px;
+}
+#webDesign .webWriteUpInfo p
+{
+	margin: 10px 0;
+}
+#webDesign .webWriteUpInfoBG
+{
+	position: absolute;
+	background-color: #fff;
+	width: 100%;
+	height: 620px;
+	opacity: 0.8;
+	filter:alpha(opacity=80);
+}
+#arrows
+{
+	position: absolute;
+	top: 723px;
+	text-align: left;
+	width: 960px;
+}
+#arrows div
+{
+	position: relative;
+	display: inline;
+	cursor: pointer;
+}
+#arrows #left
+{
+	top: -45px;
+	left: 20px;
+}
+#arrows #right
+{
+	float: right;
+	top: -45px;
+	right: 20px;
+}
+/* ========== Artworks Style ==========*/
+#artworksPage
+{
+	margin: 0 auto;
+	background-color: #000;
+	width: 960px;
+	height: 900px;
+}
+#artworksPage > div
+{
+	position:relative;
+}
+#artworkHeaderImg
+{
+	position: absolute;
+}
+#artworkHeader .aTable
+{
+	position: absolute;
+	top: 334px;
+}
+#bannerContainer
+{
+	padding: 5px;
+	display: table;
+	position: absolute;
+	width: 479px;
+	height: 224px;
+	overflow: hidden;
+	border: 2px solid #fff;
+	top: 65px;
+	right: 10px;
+	background-color: #000;
+}
+#banner
+{
+	position: relative;
+	width: 479px;
+	height: 224px;
+	background-color: #fff;
+}
+#banner > img
+{
+	position: absolute;
+	box-shadow: 4px 4px 4px #000;
+	left: 0;
+	top: 0;
+}
+#banner .topImg
+{
+	z-index: 3;
+}
+#banner .bottomImg
+{
+	z-index: 2;
+}
+#bannerImages
+{
+	display: none;
+}
+#slideBanner
+{
+	display: table;
+	position: absolute;
+	width: 479px;
+	height: 224px;
+	overflow: hidden;
+}
+#digital
+{
+	padding: 0 8px;
+}
+#artworkBody
+{
+	text-align: center;
+	top: 408px;
+	width: 960px;
+	height: 493px;
+}
+#artworkBody .aTD
+{
+	width: 100%;
+	height: 100%;
+	background: url(../images/artwork_default.jpg) center no-repeat;
+}
